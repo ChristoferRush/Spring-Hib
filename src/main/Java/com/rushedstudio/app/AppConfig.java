@@ -21,7 +21,7 @@ import javax.persistence.EntityManagerFactory;
 public class AppConfig {
 
     @Bean
-    public LocalEntityManagerFactoryBean entityManagerFactoryBean(){
+    public LocalEntityManagerFactoryBean entityManagerFactory(){
         LocalEntityManagerFactoryBean entityManagerFactoryBean = new LocalEntityManagerFactoryBean();
         entityManagerFactoryBean.setPersistenceUnitName("booksPersistenceUnit");
         return entityManagerFactoryBean;
@@ -33,6 +33,7 @@ public class AppConfig {
         return jpaTransactionManager;
     }
 
+    @Bean
     public ViewResolver viewResolver(){
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
         viewResolver.setPrefix("/WEB-INF/views/");
