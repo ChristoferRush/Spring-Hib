@@ -1,4 +1,4 @@
-package com.rushedstudio.app.repository;
+package com.rushedstudio.app;
 
 import com.rushedstudio.app.AppConfig;
 import org.springframework.web.WebApplicationInitializer;

@@ -14,8 +14,8 @@
 <form:form method="post" modelAttribute="book">
     <form:input path="title" value="title" />
     <form:input path="author" value="author" />
-    <form:input path="publisher" />
-    <form:input path="description" />
+    <form:input path="publisher" value="publisher" />
+    <form:input path="description" value="description" />
     <input type="submit" value="SAVE" />
 </form:form>
 </hr>

@@ -11,7 +11,7 @@ public class Book {
     private Long id;
     private String title;
     private String author;
-    private Boolean rating;
+    private Double rating;
     private String publisher;
     private String description;
 
@@ -41,11 +41,11 @@ public class Book {
         this.author = author;
     }
 
-    public Boolean getRating() {
+    public Double getRating() {
         return rating;
     }
 
-    public void setRating(Boolean rating) {
+    public void setRating(Double rating) {
         this.rating = rating;
     }
 
