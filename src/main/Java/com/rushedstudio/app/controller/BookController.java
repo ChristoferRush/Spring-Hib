@@ -40,7 +40,7 @@ public class BookController {
     }
 
     @RequestMapping(value = "/delete/{id}")
-    public String bookDelete(@PathVariable Long id){
+    public String bookDelete(@PathVariable("id") Long id){
         Book bookToDelete = bookRepository.findOne(id);
         bookRepository.delete(bookToDelete);
         return "redirect:/book/list";
@@ -54,7 +54,7 @@ public class BookController {
         return "book_edit";
     }
 
-    @RequestMapping(value = "/edit", method = RequestMethod.POST)
+    @RequestMapping(value = "/edit", method = RequestMethod.GET)
     public String bookEditSave(@ModelAttribute Long id,
                                @ModelAttribute String title,
                                @ModelAttribute String author,

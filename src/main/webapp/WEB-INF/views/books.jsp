@@ -16,8 +16,8 @@
                 <tr>
                     <td>${book.title}</td>
                     <td>${book.author}</td>
-                    <td><a href="<c:url value='/product/del/${book.id}'/>"/>delete</a></td>
-                    <td><a href="<c:url value='/product/edit/${book.id}'/>"/>edit</a></td>
+                    <td><a href="<c:url value='/book/del/${book.id}'/>">delete</a></td>
+                    <td><a href="<c:url value='/book/edit/${book.id}'/>">edit</a></td>
                 </tr>
             </table>
         </c:forEach>
